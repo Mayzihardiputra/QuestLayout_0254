@@ -68,3 +68,16 @@ fun ActivitasPertama(modifier: Modifier) {
                 }
             }
         }
+        Box( //Tambah Box & teks copyright di bawah
+            modifier = Modifier
+                .fillMaxSize()
+        ) {
+            Text(
+                stringResource(id = R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(all = 50.dp),
+            )
+        }
+    }
+}
