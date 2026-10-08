@@ -18,3 +18,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge() //Inisialisasi fungsi enableEdgeToEdge
+        setContent {
+            Pertemuan4Theme {
+                // Setup Scaffold
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
