@@ -40,3 +40,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
+@Preview(showBackground = true) //Setup GreetingPreview
+@Composable
+fun GreetingPreview() {
+    Pertemuan4Theme {
+        Greeting("Android")
+    }
+}
